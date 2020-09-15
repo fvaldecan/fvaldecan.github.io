@@ -7,12 +7,12 @@ AOS.init({
     $(".nav-link").click(function(){
         var pageId = $(this).attr("data-page");
         $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
+        $(".navbar-collapse").removeClass("show");
     });
     // ----------------------- 
         // Progress Bar--------------------
         // 
         // 
-
     $(window).on ('load', function (){ 
         $('.progress-bar').each(function(){
                 var width = $(this).data('percent');
